@@ -1,0 +1,10 @@
+E:\Projects\Christmas Number Picker\Christmas Number Picker\bin\Debug\Christmas Number Picker.exe.config
+E:\Projects\Christmas Number Picker\Christmas Number Picker\bin\Debug\Christmas Number Picker.exe
+E:\Projects\Christmas Number Picker\Christmas Number Picker\bin\Debug\Christmas Number Picker.pdb
+E:\Projects\Christmas Number Picker\Christmas Number Picker\obj\Debug\Christmas Number Picker.csprojResolveAssemblyReference.cache
+E:\Projects\Christmas Number Picker\Christmas Number Picker\obj\Debug\Christmas_Number_Picker.ColorPicker.resources
+E:\Projects\Christmas Number Picker\Christmas Number Picker\obj\Debug\Christmas_Number_Picker.Form1.resources
+E:\Projects\Christmas Number Picker\Christmas Number Picker\obj\Debug\Christmas_Number_Picker.Properties.Resources.resources
+E:\Projects\Christmas Number Picker\Christmas Number Picker\obj\Debug\Christmas Number Picker.csproj.GenerateResource.Cache
+E:\Projects\Christmas Number Picker\Christmas Number Picker\obj\Debug\Christmas Number Picker.exe
+E:\Projects\Christmas Number Picker\Christmas Number Picker\obj\Debug\Christmas Number Picker.pdb
