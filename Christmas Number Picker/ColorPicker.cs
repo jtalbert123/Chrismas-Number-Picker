@@ -14,15 +14,21 @@ namespace Christmas_Number_Picker
     {
         public static readonly Color[] colors = { Color.Red, Color.Green, Color.Blue, Color.Gray };
 
-        private Timer IntervalTimer;
-        private int ColorIndex;
-        private bool Picked;
+        private static Timer IntervalTimer;
+        public int ColorIndex { get; private set; }
+
+        public bool Picked { get; private set; }
+
+
+        static ColorPicker()
+        {
+            IntervalTimer = new Timer();
+            IntervalTimer.Interval = 300;
+        }
 
         public ColorPicker()
         {
             InitializeComponent();
-            IntervalTimer = new Timer();
-            IntervalTimer.Interval = 100;
             IntervalTimer.Tick += IntervalTimer_Tick;
             ColorIndex = 0;
             Picked = false;
@@ -35,7 +41,7 @@ namespace Christmas_Number_Picker
 
         private void IntervalTimer_Tick(object sender, EventArgs e)
         {
-            if (!Picked)
+            if (!Picked && Enabled)
             {
                 ColorIndex = (ColorIndex + 1) % colors.Length;
                 Invoke(new Action(() =>
@@ -54,6 +60,14 @@ namespace Christmas_Number_Picker
                 BackColor = Color.DarkGray;
                 Refresh();
             }));
+            OnClick(new EventArgs());
+        }
+
+        public void Reset()
+        {
+            ColorIndex = 0;
+            Picked = false;
+            BackColor = SystemColors.Control;
         }
     }
 }
